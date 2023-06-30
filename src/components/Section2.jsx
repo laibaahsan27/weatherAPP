@@ -3,7 +3,7 @@ import Rain from '../images/Rain Cloud.png'
 
 export default function Section2() {
   return (
-    <div className='sec2Con'>
+    <div className='sec2Con' id='Cities'>
       <h1 className='sec2Head'>CURRENT <span style={{color:'rgba(161, 250, 225, 1)'}}>&nbsp;WEATHER&nbsp;</span>  GENERATED ACROSS SOME MAJOR CITIES</h1>
       <div className='sec2Cards'> 
 

@@ -4,7 +4,7 @@ import BG from '../images/BG(up).png'
 
 export default function Section3() {
   return (
-    <div className='sec3OuterMost'>
+    <div className='sec3OuterMost' id='About'>
         <div className='sec3SideCon'>
             <img src={BG} alt="" />
         </div>

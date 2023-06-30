@@ -51,7 +51,7 @@ export default function Navbar() {
               Home
             </Link>
 
-            <Link
+            {/* <Link
               to="Services"
               className="navButt"
               spy={true}
@@ -71,29 +71,29 @@ export default function Navbar() {
               onClick={handleMenuOptionClick}
             >
               Maps
+            </Link> */}
+
+            <Link
+              to='Cities'
+              className="navButt"
+              spy={true}
+              smooth={true}
+              duration={200}
+              onClick={handleMenuOptionClick}
+            >
+              Cities
             </Link>
 
             <Link
-              to="work"
+              to='About'
               className="navButt"
               spy={true}
               smooth={true}
               duration={200}
               onClick={handleMenuOptionClick}
             >
-              News
+              About
             </Link>
-
-            {/* <Link
-              to="contact"
-              className="navButt"
-              spy={true}
-              smooth={true}
-              duration={200}
-              onClick={handleMenuOptionClick}
-            >
-              
-            </Link> */}
           
             <Link
               to="FAQ"
@@ -103,7 +103,7 @@ export default function Navbar() {
               duration={200}
               onClick={handleMenuOptionClick}
             >
-              Settings
+              Get Weather
             </Link>
           
         </nav>

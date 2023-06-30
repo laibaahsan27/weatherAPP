@@ -25,7 +25,7 @@ export default function Footer() {
             >
               Home
             </Link>
-           <span style={{color:'#FFF', paddingTop:'20px'}}>&#x2022;</span>
+           {/* <span style={{color:'#FFF', paddingTop:'20px'}}>&#x2022;</span>
             <Link
               to="Services"
               className="Footer-btn"
@@ -34,26 +34,26 @@ export default function Footer() {
               duration={200}
             >
               Get Weather
-            </Link>
+            </Link> */}
             <span style={{color:'#FFF', paddingTop:'20px'}}>&#x2022;</span>
             <Link
-              to="Services"
+              to='Cities'
               className="Footer-btn"
               spy={true}
               smooth={true}
               duration={200}
             >
-              Maps
+              Citites
             </Link>
             <span style={{color:'#FFF', paddingTop:'20px'}}>&#x2022;</span>
             <Link
-              to="work"
+              to='About'
               className="Footer-btn"
               spy={true}
               smooth={true}
               duration={200}
             >
-              News
+              About
             </Link>
             <span style={{color:'#FFF', paddingTop:'20px'}}>&#x2022;</span>
             <Link
@@ -63,7 +63,7 @@ export default function Footer() {
               smooth={true}
               duration={200}
             >
-              Settings
+              Get Weather
             </Link>
       </div>
       <div style={{display:'flex', justifyContent:'center'}}>
