@@ -5,30 +5,52 @@ export default function Section2() {
   return (
     <div className='sec2Con'>
       <h1 className='sec2Head'>CURRENT <span style={{color:'rgba(161, 250, 225, 1)'}}>&nbsp;WEATHER&nbsp;</span>  GENERATED ACROSS SOME MAJOR CITIES</h1>
-      <div>
-      {/* border-radius: 21px;
-background: #A2BABE;
-box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.28); */}
+      <div className='sec2Cards'> 
 
-        <div style={{backgroundColor:'#A2BABE', borderRadius:'21px', boxShadow:'-4px 4px 4px 0px rgba(0, 0, 0, 0.28)', width:'280px', padding:'10px'}}>
-          <div style={{color:'#FFF', fontSize:'41px', fontFamily:'Fjalla One', paddingLeft:'20px'}}>Noida, <span style={{
+        <div className='sec2Outer'>
+          <div className='sec2City'>Noida, <span style={{
             color:'rgba(34, 52, 25, 0.52)', fontSize:'25px'}}>India</span> </div>
           <div>
-          <div style={{display:'inline-block', paddingLeft:'8px', paddingRight:'20px'}}>
+          <div className='sec2Icon'>
             <img style={{display:'inline-block'}} src={Rain} alt="" />
           </div>
           <div style={{display:'inline-block'}}>
-            <div style={{color:'#FFF', fontFamily:'Fjalla One', fontSize:'50px'}}>23&deg;c</div>
-            <button style={{
-             backgroundColor:'rgba(217, 217, 217, 0.76)', borderRadius:'14px',border:'none',color:"#000", fontFamily:'Fjalla One', fontSize:'10px',width:'85px',padding:'2px'
-            }}>Real feel - 27&deg;c</button>
+            <div className='sec2Temp'>23&deg;c</div>
+            <button className='feels-btn'>Real feel - 27&deg;c</button>
           </div>
           </div>
-          <div style={{ color:'#000', fontSize:'15px', fontFamily:'Fjalla One'}}>06/06/2023 &#x2022; Tuesday &#x2022; 01:15 AM</div>
+          <div className='sec2Last'>06/06/2023 &#x2022; Tuesday &#x2022; 01:15 AM</div>
         </div>
 
-        <div></div>
-        <div></div>
+        <div className='sec2Outer'>
+          <div className='sec2City'>Mumbai, <span style={{
+            color:'rgba(34, 52, 25, 0.52)', fontSize:'25px'}}>India</span> </div>
+          <div>
+          <div className='sec2Icon'>
+            <img style={{display:'inline-block'}} src={Rain} alt="" />
+          </div>
+          <div style={{display:'inline-block'}}>
+            <div className='sec2Temp'>23&deg;c</div>
+            <button className='feels-btn'>Real feel - 27&deg;c</button>
+          </div>
+          </div>
+          <div className='sec2Last'>06/06/2023 &#x2022; Tuesday &#x2022; 01:15 AM</div>
+        </div>
+
+        <div className='sec2Outer'>
+          <div className='sec2City'>Kolkata, <span style={{
+            color:'rgba(34, 52, 25, 0.52)', fontSize:'25px'}}>India</span> </div>
+          <div>
+          <div className='sec2Icon'>
+            <img style={{display:'inline-block'}} src={Rain} alt="" />
+          </div>
+          <div style={{display:'inline-block'}}>
+            <div className='sec2Temp'>23&deg;c</div>
+            <button className='feels-btn'>Real feel - 27&deg;c</button>
+          </div>
+          </div>
+          <div className='sec2Last'>06/06/2023 &#x2022; Tuesday &#x2022; 01:15 AM</div>
+        </div>
       </div>
       
     </div>
