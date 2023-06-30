@@ -1,38 +1,234 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Fjalla+One&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* navbar */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbarLogo{
+  object-fit: contain;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navCON{
+  background-color: rgb(152, 205, 213);
+  /* height: 64vh; */
+  /* background-image: url(../src/images/BG\(up\).png); */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 21px 66px 21px 43px;
+  /* width: 100%; */
+  
+}
+.navbarLogo {
+  height: 80px;
+}
+/* .navPoint{
+  display: none;
+} */
+.navLinks{
+  background: #D9D9D9;
+  box-shadow: -4px 4px 4px 0px rgba(174, 214, 176, 0.63);
+  width: 1310px;
+  margin-top: 12px;
+  margin-left: 60px;
+  height: 40px;
+  display: flex;
+  /* justify-content: end; */
+  list-style: none;
+}
+
+.navButt{
+  text-decoration: none;
+  border: none;
+  font-family: 'Fira Sans Extra Condensed', 'sans-serif';
+  color: #000;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* font-family: 'Fjalla One', sans-serif; */
+  padding: 0px 20px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-right: 2px solid rgba(0, 0, 0, 0.31);
+  cursor: pointer;
+}
+.navButtS{
+  border-right: none;
+}
+.navButt:hover{
+  color: #3B7251;
+}
+.navButtActive{
+  text-decoration: underline 3px #4DAF93;;
+}
+.nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background-color: #1B1B1B;
+  border: none;
+  display: none;
+}
+
+@media screen and (max-width: 780px){
+  /* .navPoint{
+    display: contents;
+  } */
+  .navCON{
+    padding: 21px 33px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .navCON {
+    position: relative;
+    z-index: 10000;
+  }
+
+  .nav-btn{
+    display: flex;
+    background: none;
+    align-items: center;
+    /* margin-right: 20px; */
+  }
+  .navButt:active{
+    color: #3B7251;
+  }
+  .navLinks{
+    z-index: 2;
+    box-shadow: none;
+    background-color: rgba(119, 173, 183, 1);
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    position: fixed;
+    /* padding-bottom: 10px; */
+    padding-top: 20px;
+    top: 100px;
+    left: 170px;
+    height: 27%;
+    width: 50%;
+    transition: 0.5s;
+    transform: translateY(-100vh);
+  }
+  .navButt{
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgba(119, 173, 183, 1);
+    border: none;
+    font-size: 22px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+  }
+  .navButtS{
+    border-bottom: none;
+  }
+  .responsive_nav{
+    transform: none;
+  }
+}
+
+/* navbar ends */
+
+/* section-1 */
+.section1Con{
+  /* background-image: url(../src/images/BG\(up\).png); */
+  /* height: 70vh; */
+  background-color: rgb(152, 205, 213);
+}
+.sec1Head{
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #000;
+  font-size: 82px;
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* background: #AED6B0; */
+  /* margin-bottom: 20px; */
+  padding-top: 20px;
+  text-align: right;
+}
+.sec1HeadDiv{
+  background: #AED6B0;
+  height: 102px;
+  width: 650px;
+}
+.sec1Outer{
+  display: flex;
+  justify-content: space-evenly;
+}
+.sec1P1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2C593E;
+  font-size: 40px;
+  font-family: 'Fira Sans Extra Condensed', 'sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 67px;
+  width: 600px;
+}
+.sec1P2{
+  color: #3B7251;
+font-size: 32px;
+font-family: 'Fira Sans Extra Condensed', 'sans-serif';
+padding-left: 67px;
+width: 500px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0px;
+margin-bottom: 0;
+}
+.sec1-btn{
+  margin-bottom: 80px;
+  margin-left: 150px;
+}
+
+/* end section-1 */
+
+/* section-2 */
+.sec2Con{
+  background-image: url(../src/images/BG\(down\)2.png);
+  height: 85vh;
+  background-size:cover;
+  width: 100%;
+}
+.sec2Head{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFF;
+  font-size: 32px;
+  font-family: 'Fira Sans Extra Condensed', 'sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 5px;
+  text-align: center;
+  padding-top: 40px;
+  text-decoration: underline rgba(161, 250, 225, 1);
+  text-underline-position: under;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* end section-2  */
